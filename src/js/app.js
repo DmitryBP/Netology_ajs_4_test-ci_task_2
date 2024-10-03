@@ -1,14 +1,15 @@
 // TODO: write your code here
 
-// Home Work
-// Task 2
+export const sortHealth = (healthObjsArr) => {
+  return healthObjsArr.sort((a, b) => {
+    return b.health - a.health;
+  });
+};
 
-import sortByHelth from './sortByHelth.js';
-
-let herosArr = [
-  {name: 'мечник', health: 10},
-  {name: 'маг', health: 100},
-  {name: 'лучник', health: 80},
-]
-
-sortByHelth(herosArr)
+console.log(
+  sortHealth([
+    { name: "мечник", health: 10 },
+    { name: "маг", health: 100 },
+    { name: "лучник", health: 80 },
+  ])
+);
